@@ -54,52 +54,5 @@
         }
     </script>
 
-    <!-- Versión anterior con array, cuenta nombres compuestos como apellido
-       <script>
-        //1
-        let nomApe = prompt("Escribe tu nombre y apellido: ");
-        //almaceno en la variable un string que cambia (con /g), los espacios (/s) y los remplaza con caracter nulo, para que no sea contabilizado
-        let quitar = nomApe.replace(/\s/g, "");
-        let nomApeSinEspacio = quitar.length;
-        let nomApeBueno=nomApe.trim();
-        //Cuantifico la cantidad de caracteres y lo muestro
-        document.write("Tu nombre y apellidos sin espacios contiene " + nomApeSinEspacio + " caracteres");
-
-        //2
-        //Solo se requiere usar estas funciones
-        document.write("<br/> En minúsculas: " + nomApe.toLowerCase());
-        document.write("<br/> En mayúsculas: " + nomApe.toUpperCase());
-        console.log(nomApeBueno);
-        console.log(typeof(nomApeBueno));
-        //3
-        //bucle que imprime palabras separadas por espacios en lineas diferentes
-        let arrayNomApe = nomApeBueno.split(" ");
-        for (let i = 0; i < arrayNomApe.length; i++) {
-            document.write("<br/>" + arrayNomApe[i]);
-        }
-        
-        //4 y 5
-        //Si no has introducido 3 palabras, no deja avanzar
-        if (arrayNomApe.length == 3) {
-            //en cada "u" almaceno un cacho el nombre total, charat almacena un solo caracter y substring, los caracteres que haya en dicho rango
-            let u1= arrayNomApe[0].charAt(0);
-            let u2=arrayNomApe[1];
-            let u3=arrayNomApe[2].substring(0,2);
-            let usuario=u1+u2+u3;
-            //De la misma manera en el 5
-            let u21 = arrayNomApe[0].substring(0, 3);
-            let u22 = arrayNomApe[1].substring(0, 3);
-            let u23 = arrayNomApe[2].substring(0, 3);
-            let usuario2 = u21 + u22 + u23;
-            
-            //Imprimo todo de golpe para aprovechar la estructura
-            document.write("<br/> Tu nombre de usuario puede ser: " + usuario.toLowerCase()+" o "+usuario2.toLowerCase());
-        } else {
-            document.write("<br/> Para proponerte nombres de usuario, requiero nombre y dos apellidos");
-        }
-        
-        
-    </script>-->
-
 
 </body></html>
