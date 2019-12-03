@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando eventos</title>
+    <script src="eventos.js" defer></script>
+    <script src="tablas.js" ></script>
+    <style>
+        td{
+            height:100px;
+            width:100px;
+            border:1px solid blue;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <h1 id="h1">Titulo en inicial</h1>
+    <!---Eventos de teclado-->
+    <form action="enviar.ph">
+        <input type="text" id="entrada" />
+        <!--Para poner en mayusculas las letras que le metas onkeyup-->
+        <!--- con el onchange no cambia hasta que le das a otro lao o al enviar-->
+        <input type="submit" value="Enviar" id="enviar" />
+    </form>
+    <a href="google.com" id="enlace">Ir a google</a>
+    <table>
+        <tr>
+            <td id="1">1</td>
+            <td id="2">2</td>
+            <td id="3">3</td>
+        </tr>
+        <tr>
+            <td id="4">4</td>
+            <td id="5">5</td>
+            <td id="6">6</td>
+        </tr>
+    </table>
+</body>
+
+</html>
