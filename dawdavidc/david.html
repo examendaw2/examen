@@ -9,50 +9,7 @@
 
 <body>
     <h1 id="titu"></h1>
-    <p id="solu"></p>
-
-    <script>
-        document.getElementById("titu").innerHTML += "Ejercicio 1"
-        //1
-        let nom = prompt("Escribe tu nombre: ");
-        let ape1 = prompt("Escribe tu primer apellido: ");
-        let ape2 = prompt("Escribe tu segundo apellido: ");
-        console.log(typeof(nom));
-        if (nom == "" || ape1 == "" || ape2 == "") {
-            document.getElementById("solu").innerHTML += "Error en la introducción";
-        } else {
-
-            nom = nom.trim();
-            ape1 = ape1.trim();
-            ape2 = ape2.trim();
-
-            let todo = nom + ape1 + ape2;
-            let quitar = todo.replace(/\s/g, "");
-            let nomApeSinEspacio = quitar.length;
-            //Cuantifico la cantidad de caracteres y lo muestro
-            document.getElementById("solu").innerHTML += "Tu nombre y apellidos sin espacios contiene " + nomApeSinEspacio + " caracteres";
-
-            //2
-            //Solo se requiere usar estas funciones
-            document.getElementById("solu").innerHTML += "<br/> En minúsculas: " + nom.toLowerCase() + " " + ape1.toLowerCase() + " " + ape2.toLowerCase();
-            document.write();
-            document.getElementById("solu").innerHTML += "<br/> En mayúsculas: " + nom.toUpperCase() + " " + ape1.toUpperCase() + " " + ape2.toUpperCase();
-
-            //3
-            let arrayNomApe = [nom, ape1, ape2];
-            document.getElementById("solu").innerHTML += "<br/>Nombre: " + arrayNomApe[0] + "<br/>";
-            document.getElementById("solu").innerHTML += "Apellido 1: " + arrayNomApe[1] + "<br/>";
-            document.getElementById("solu").innerHTML += "Apellido 2: " + arrayNomApe[2];
-            //4 y 5
-            //en cada "u" almaceno un cacho el nombre total, charat almacena un solo caracter y substring, los caracteres que haya en dicho rango
-            let sugerencia = arrayNomApe[0].charAt(0) + arrayNomApe[1] + arrayNomApe[2].substring(0, 2);
-            //De la misma manera en el 5
-            let sugerencia2 = arrayNomApe[0].substring(0, 3) + arrayNomApe[1].substring(0, 3) + arrayNomApe[2].substring(0, 3);
-
-            //Imprimo todo de golpe para aprovechar la estructura
-            document.getElementById("solu").innerHTML +="<br/> Tu nombre de usuario puede ser: " + sugerencia.toLowerCase() + " o " + sugerencia2.toLowerCase();
-        }
-    </script>
+    <p id="solu">ÚLTIMO COMMIT</p>
 
 
 </body></html>
